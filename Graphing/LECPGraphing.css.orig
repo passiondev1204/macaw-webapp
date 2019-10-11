@@ -1,0 +1,1774 @@
+/*
+    LECPGraphing.css
+    LECrossPlatform
+
+    Created by Yong
+    Copyright (c) 2017 LiftEd, Incorporated. All rights reserved.
+*/
+
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    src: url('MyriadPro-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+    src: url('MyriadPro-Semibold.otf') format('opentype');
+}
+
+html *{
+  cursor: pointer;
+}
+
+body{
+  font-family: Myriad Pro;
+}
+
+.cLEAverageMaxGraphLine{
+  fill: none;
+  stroke-width: 2px;
+  stroke-dasharray: 4;
+}
+
+.cLEAverageGraphLine{
+  fill: none;
+  stroke-width: 2px;
+}
+
+.graphline {
+ fill: none;
+ stroke-width: 2px;
+}
+
+.cLEMaxGraphLine {
+  fill: none;
+  stroke-width: 2px;
+  stroke-dasharray: 4;
+}
+
+.cLEXAxis line{
+  fill: none;
+  stroke: #D3D3D3;
+}
+
+.cLEYAxis line{
+  fill: none;
+  stroke: #D3D3D3;
+}
+
+.cLEDateInput{
+  border: 1px solid black;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
+
+.cLEDateInput:focus{
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.cLETacticLineText{
+  font-size: .8em;
+}
+
+.cLETacticAnnotationGroup .annotation.badge path.subject-pointer, .cLETacticAnnotationGroup .annotation.badge path.subject {
+  fill: #0081D3;
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+
+.cLETacticAnnotationGroup .annotation path {
+  stroke: #0081D3;
+  stroke-width: 2px;
+  fill: none;
+}
+
+
+.annotation.badge path.subject-ring {
+  fill: white;
+  stroke-width: 3px;
+}
+
+.annotation.badge .badge-text {
+  fill: white;
+  font-size: .8em;
+}
+
+
+.cLENoteAnnotationGroup .annotation.badge path.subject-pointer, .cLENoteAnnotationGroup .annotation.badge path.subject {
+  fill: #32BEE5;
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+.cLETitle{
+  font-family: Myriad Pro;
+  color: black;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  padding-left: 5px;
+  top: 0px;
+}
+
+.cLETitle2Rows{
+  font-family: Myriad Pro;
+  color: black;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  right: 5px;
+  top: 0px;
+}
+
+.cLETitle{
+  font-family: Myriad Pro;
+  color: black;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  right: 5px;
+  top: 2px;
+}
+
+
+.cLETitleHolder{
+  top: 3px;
+  position: relative;
+  width: 306px;
+}
+
+    .annotation-note-title {
+      font-weight: bold;
+    }
+
+    .annotation.xythreshold {
+      cursor: move;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    text.hover {
+      font-size: .8em;
+    }
+
+    text.title {
+      font-size: 1.1em;
+    }
+
+.cLETacticAndNotesLines{
+  stroke-width: 1;
+  stroke: black;
+  stroke-dasharray: 5, 10;
+  fill: none;
+}
+
+.cLETacticLines{
+  stroke-width: 1;
+  stroke: black;
+  stroke-dasharray: 5, 10;
+  fill: none;
+}
+
+.cLENoteAnnotationGroup .annotation path {
+  stroke: #32BEE5;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.cLENoteAnnotationGroup .annotation path.connector-arrow,
+.cLENoteAnnotationGroup .title text,
+.cLENoteAnnotationGroup .annotation.callout.circle .annotation-subject path{
+    fill: white !important;
+}
+
+.cLENoteAnnotationGroup .annotation text{
+    fill: white !important;
+}
+
+.cLENoteAnnotationGroup .annotation-connector .connector, .cLENoteAnnotationGroup{
+  stroke: #32BEE5 !important;
+}
+
+div.cLETabs {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 700px;
+  height: 30px;
+  margin-left: 0%;
+  margin-bottom: 10px;
+}
+
+div.cLETabsLength4 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 640px;
+  height: 30px;
+  margin-left: 4%;
+  margin-bottom: 10px;
+}
+
+
+div.cLETabsLength3 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 480px;
+  height: 30px;
+  margin-left: 17%;
+  margin-bottom: 10px;
+}
+
+div.cLETabsLength2 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 320px;
+  height: 30px;
+  margin-left: 27%;
+  margin-bottom: 10px;
+}
+
+div.cLETabsLength1 {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 160px;
+  height: 30px;
+  margin-left: 43%;
+  margin-bottom: 10px;
+}
+
+div.cLETabsLength4 button {
+  font-size: 1em;
+  background-color: inherit;
+  border: 1px solid #ccc !important;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 14px;
+  transition: 0.3s;
+  bottom: 8px;
+  position: relative;
+  width: 160px;
+  color: black;
+}
+
+div.cLETabsLength3 button {
+  font-size: 1em;
+  background-color: inherit;
+  border: 1px solid #ccc !important;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 14px;
+  transition: 0.3s;
+  bottom: 8px;
+  position: relative;
+  width: 160px;
+  color: black;
+}
+
+div.cLETabsLength2 button {
+  font-size: 1em;
+  background-color: inherit;
+  border: 1px solid #ccc !important;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 14px;
+  transition: 0.3s;
+  bottom: 8px;
+  position: relative;
+  width: 160px;
+  color: black;
+}
+
+div.cLETabsLength1 button {
+  font-size: 1em;
+  background-color: inherit;
+  color: #fff;
+  border: 1px solid #ccc !important;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  left: 0px;
+  bottom: 8px;
+  position: relative;
+  width: 160px;
+  padding: 11px 14px 9px 7px;
+  transition: 0.3s;
+  color: black;
+}
+
+div.cLETabs button {
+    width: 140px;
+    font-size: .9em;
+    background-color: inherit;
+    border: 1px solid #ccc !important;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 11px 5px 9px 7px;
+    margin: 0px;
+    transition: 0.3s;
+    bottom: 8px;
+    position: relative;
+    color: black;
+}
+
+div.cLETabsLength3 button.active {
+    background-color: #0081D3;
+    color: #fff;
+    border: 1px solid #ccc !important;
+}
+
+div.cLETabsLength2 button.active {
+    background-color: #0081D3;
+    color: #fff;
+    border: 1px solid #ccc !important;
+}
+
+div.cLETabsLength1 button.active {
+    background-color: #0081D3;
+    color: #fff;
+    border: 1px solid #ccc !important;
+    padding: 11px 5px 9px 7px;
+}
+
+div.cLETabs button:hover {
+    background-color: #ddd;
+}
+
+div.cLETabs button.active {
+    background-color: #0081D3;
+    color: #fff
+}
+
+.cLETabContent {
+  display: none;
+  border: 1px solid #ccc;
+  width: 562px;
+}
+
+.cLETabPromptsContent {
+    display: none;
+    border: 1px solid #ccc;
+    width: 800px;
+    height: 800px;
+}
+
+
+.cLETacticText{
+  font-size: .8em;
+  fill: white;
+  font-family: Myriad Pro;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.cLENoteText{
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 46px;
+}
+
+.cLEGraphLineButton{
+  border: none;
+  position: relative;
+  left: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 8px;
+  top: 4px;
+  float: left;
+}
+
+.cLEGraphLineButton2Rows{
+  border: none;
+  position: relative;
+  left: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 8px;
+  top: 9px;
+  float: left;
+}
+
+.cLEGraphLineButton3Rows{
+  border: none;
+  position: relative;
+  left: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+  top: 18px;
+  float: left;
+}
+
+.cLEGraphLineButtonName{
+  float: right;
+  position: relative;
+  top: 5px;
+  left: 23px;
+}
+
+.cLEDataSubHeaderName2Rows{
+  position: relative;
+  top: 4px;
+  left: 23px;
+  margin-left: 23px;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.cLEDataTabHeading{
+  display: flex;
+  background-color: #f1f1f1;
+  height: 35px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.cLEAverageData{
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   border-bottom: 1px solid #ccc;
+   top: 1px;
+   position: relative;
+}
+
+.cLEAverageDataName{
+  left: 24px;
+  top: 7px;
+  position: relative;
+  color: black;
+}
+
+.cLEAverageDataNameWhite{
+  left: 24px;
+  top: 7px;
+  position: relative;
+  color: #fff;
+}
+
+.cLESubHeaderValues{
+  position: relative;
+  top: 9px;
+  width: 135px;
+  /*font-size: .8em;*/
+  text-align: center;
+  color: black;
+}
+
+.cLESubHeaderValues2Rows{
+  position: relative;
+  top: 12px;
+  width: 135px;
+  /*font-size: .8em;*/
+  text-align: center;
+  color: black;
+}
+
+.cLESubHeaderValues3Rows{
+  position: relative;
+  top: 20px;
+  width: 135px;
+  /*font-size: .8em;*/
+  text-align: center;
+  color: black;
+}
+
+.cLEDataButtonHolder{
+  width: 315px;
+}
+
+.cLEDataFirstSubHeader{
+  position: relative;
+  top: 13px;
+  width: 315px;
+  margin-left: 0px;
+  text-align: left;
+  padding-left: 10px;
+  color: black;
+}
+
+.cLEDataSubHeader{
+  position: relative;
+  top: 13px;
+<<<<<<< HEAD
+  right: 15px; 
+=======
+  right: 15px;
+>>>>>>> sandbox/yong/ENG-1037-Prompts
+  margin-left: 22px;
+  text-align: center;
+  color: black;
+  width: 117px;
+}
+
+.cLEDataSubHeaderName{
+  position: relative;
+  top: 7px;
+  left: 23px;
+  margin-left: 23px;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.cLEDataTruncated{
+  position: relative;
+  top: 11px;
+  left: 23px;
+  color: black;
+  padding-bottom: 5px;
+  font-size: 1em;
+}
+
+.cLEDataSubHeaderNameOver17{
+  position: relative;
+  top: 9px;
+  left: 23px;
+  margin-left: 23px;
+  color: black;
+  padding-bottom: 5px;
+  font-size: .8em;
+}
+
+
+.cLEDataRow{
+  display: flex;
+  justify-content: space-between;
+  top: 1px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+
+.cLEDataTabMastered{
+  display: inline-block;
+  top: 1px;
+  width: 70px;
+  text-align: center;
+  font-size: .8em;
+  left: 188px;
+  position: relative;
+  color: #0081D3;
+  font-family: Myriad Pro;
+}
+
+
+.cLEDataTabBaseLine{
+  display: inline-block;
+  top: 1px;
+  width: 70px;
+  text-align: center;
+  font-size: .8em;
+  left: 204px;
+  position: relative;
+  color: #0081D3;
+  font-family: Myriad Pro;
+}
+
+.cLEDataTabStatsPercent{
+  color: #0081D3;
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+  font-size: .8em;
+  top: 10px;
+  left: 230px;
+  position: relative;
+  font-family: Myriad Pro;
+}
+
+.cLEMasteryData{
+  display: inline-block;
+  bottom: 13px;
+  width: 79px;
+  text-align: center;
+  font-size: 1em;
+  left: 118px;
+  position: relative;
+  font-family: Myriad Pro;
+  color: #4E5C6E;
+}
+
+.cLEMasteryPercentData{
+  display: inline-block;
+  bottom: 13px;
+  width: 68px;
+  text-align: center;
+  font-size: 1em;
+  left: 153px;
+  position: relative;
+  font-family: Myriad Pro;
+  color: #4E5C6E;
+}
+
+.cLESelectDate{
+  background-color: #ffffff;
+  color: #3498db;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 6px;
+  text-align: center;
+  width: 50%;
+  font-family: Myriad Pro;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    text-align: center;
+    text-align-last: center;
+}
+
+.cLETabsHeading{
+  width: 100%;
+  height: 60px;
+  position: relative;
+  width: 562px;
+}
+
+.cLECheckBox{
+  -webkit-appearance: none;
+  	background-color: #fafafa;
+  	border: 1px solid #cacece;
+  	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  	padding: 9px;
+  	border-radius: 3px;
+  	display: inline-block;
+  	position: relative;
+    top: 3px;
+}
+
+
+.cLECheckBox:active, .cLECheckBox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.cLECheckBox:checked {
+	background-color: #fff;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.cLECheckBox:checked:after {
+	content: '\2714';
+  font-size: 10px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #0081D3;
+}
+
+
+.cLENote{
+  position: relative;
+  font-family: Myriad Pro;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin: 0px 0px 0px 5px;
+  top: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: .9em;
+}
+
+.cLETactic{
+  position: relative;
+  font-family: Myriad Pro;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin: 0px 0px 0px 5px;
+  top: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: .9em;
+}
+
+.cLEAnnotation{
+  position: relative;
+  font-family: Myriad Pro;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin: 0px 0px 0px 5px;
+  top: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: .9em;
+}
+
+.cLEGraphTopBar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cLEGraphTopBar tspan:first-child{
+  margin-right: -5px;
+}
+
+.cLETopBarLineSpace{
+  height: 10px;
+}
+
+.cLEAxisButtonHolder{
+  width: 170px;
+}
+
+.cLEOptionsAxisButtonHolder{
+  position: relative;
+  width: 170px;
+  left: 50px;
+}
+
+.cLEOptionsButtonHolder{
+  position: relative;
+  right: 10px;
+}
+
+.cLEOptionsModalButton{
+  width: 23px;
+  height: 23px;
+  line-height: 25px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #fff;
+  letter-spacing: .5px;
+  font-size: .8em;
+  border: none;
+  margin-left: 15px;
+  border-radius: 2px;
+  padding: 0 0 0 0;
+  border: 1px solid #4cbeff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.cLEGraphAxisButton{
+  width: 75px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #fff;
+  letter-spacing: .5px;
+  font-size: .8em;
+  border: none;
+  border-radius: 2px;
+  padding: 0 0 0 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.cLEGraphAxisButton:hover{
+  background-color: #2198ba
+}
+
+.cLEGraphAxisButton:active{
+  background-color: #0081D3;
+  color: #fff;
+}
+
+.cLENotesTextHolder{
+   -webkit-overflow-scrolling: touch;
+   overflow: scroll;
+   padding: 0;
+   list-style-type: none;
+   margin: 0;
+   border none;
+}
+
+.cLENotesTextHolder{
+   -webkit-overflow-scrolling: touch;
+   overflow: scroll;
+   padding: 0;
+   list-style-type: none;
+   margin: 0;
+   border none;
+}
+
+
+.cLECheckBoxText{
+  position: relative;
+  left: 10px;
+  bottom: 5px
+}
+
+.cLEWrapperDropDown {
+    /* Size & position */
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 15px;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+    border-color: #4cbeff;
+    border-width: .5px .5px .5px .5px;
+    border-style: solid;
+    height: 0px;
+}
+
+.cLEWrapperDropDown:after { /* Little arrow */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #4cbeff transparent;
+}
+
+.cLEWrapperDropDown .cLEDropDown {
+    /* Size & position */
+    margin: 0 auto;
+    position: absolute;
+    top: 100%;
+    left: -91px;
+    right: 0;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-top: none;
+    border-bottom: none;
+    list-style: none;
+    transition: all 0.3s ease-out;
+
+    /* Hiding */
+    max-height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.cLEWrapperDropDown .cLEDropDown li {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid #e6e8ea;
+}
+
+.cLEWrapperDropDown.active {
+    border-radius: 5px 5px 0 0;
+    background: #4cbeff;
+    box-shadow: none;
+    border-bottom: none;
+    color: white;
+}
+
+.cLEWrapperDropDown.active:after {
+    border-color: #82d1ff transparent;
+}
+.cLEWrapperDropDown.active .cLEDropDown {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    max-height: 400px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.cLEDatePickerValue{
+  position: relative;
+  bottom: 8px;
+  right: 10px;
+}
+
+/*/////////////////////*/
+
+body{
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+}
+
+body h5 a {
+  text-decoration: none;
+  color: white;
+}
+body h5 a:hover {
+  color: #cecece;
+}
+body h5 span:after {
+  color: yellow;
+  content: '\f0e7';
+  font-family: FontAwesome;
+  font-weight: normal;
+}
+body .open-modal {
+  height: 22px;
+  width: 100%;
+  display: block;
+  border: solid white;
+  font-family: Myriad Pro;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  font-weight: normal;
+  background-color: white;
+  font-size: 16px;
+  padding: 0px 0px 0px 0px;
+  color: #333;
+  position: relative;
+  right: 2px;
+}
+body .modal-dialog {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body .modal-content-annotation {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  background-color: white;
+  z-index: 2;
+  will-change: transform;
+  position: absolute;
+  margin-left: -400px;
+  width: 450px;
+  height: auto;
+  transform: scaleX(0);
+  opacity: 0;
+  border: 1px solid #cecece;
+  width: 600px;
+  transition: all 300ms cubic-bezier(0.72, 0.91, 0.35, 1.2);
+  top: 0px;
+}
+
+
+body .modal-content-annotation .modal-header-annotation {
+  font-family: Myriad Pro;
+  min-height: 15px;
+  padding: 20px 0px 0px 15px;
+  border-bottom: 1px solid #cecece;
+}
+
+body .modal-content-annotation .modal-header-annotation .close-modal {
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  top: -10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: all 500ms;
+  user-select: none;
+}
+
+body .modal-content-annotation .modal-header-annotation .close-modal:hover {
+  transform: rotate(180deg);
+}
+
+body .modal-content-annotation .modal-body {
+  height: 200px;
+  padding: 15px;
+  overflow: auto;
+}
+
+body .modal-content-annotation .modal-body-annotations {
+  height: 250px;
+  padding: 15px;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+body .modal-content-annotation .modal-footer {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 4.5;
+  border-top: 1px solid #cecece;
+}
+
+body .modal-content-annotation .close-modal-annotation{
+  font-family: Myriad Pro;
+  margin: 10px;
+  height: 35px;
+  width: 80px;
+  color: #0081D3;
+  border: 1px solid #0081D3 !important;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 500ms;
+  left: 60px;
+  position: relative;
+}
+
+body .modal-content-annotation .save-modal{
+  font-family: Myriad Pro;
+  margin: 10px;
+  height: 35px;
+  width: 80px;
+  color: #0081D3;
+  border: 1px solid #0081D3 !important;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 500ms;
+  left: 60px;
+  position: relative;
+}
+
+body .modal-content-annotation .modal-footer button:hover {
+  background-color: white;
+  border: 1px solid #4cbeff;
+  color: #4cbeff;
+}
+
+body .modal-content {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  background-color: white;
+  z-index: 2;
+  will-change: transform;
+  position: absolute;
+  top: 40px;
+  margin-left: -350px;
+  width: 450px;
+  height: auto;
+  transform: scaleX(0);
+  opacity: 0;
+  border: 1px solid #cecece;
+  transition: all 300ms cubic-bezier(0.72, 0.91, 0.35, 1.2);
+}
+body .modal-content .modal-header {
+  font-family: Myriad Pro;
+  min-height: 40px;
+  padding: 20px 0px 0px 15px;
+  border-bottom: 1px solid #cecece;
+}
+
+
+body .modal-content .modal-header .close-modal {
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  top: -10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: all 500ms;
+  user-select: none;
+}
+
+
+body .modal-content .modal-header .close-modal:hover {
+  transform: rotate(180deg);
+}
+body .modal-content .modal-body {
+  height: 200px;
+  padding: 15px;
+  overflow: auto;
+}
+
+body .modal-content .modal-body-annotations {
+  height: 300px;
+  padding: 15px;
+  overflow: auto;
+}
+
+body .modal-content .modal-footer {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 4.5;
+  border-top: 1px solid #cecece;
+}
+
+body .modal-content .modal-footer button {
+  font-family: Myriad Pro;
+  margin: 10px;
+  height: 35px;
+  width: 80px;
+  color: #0081D3;
+  border: 1px solid #0081D3 !important;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+body .modal-content .modal-footer button:hover {
+  background-color: white;
+  border: 1px solid #4cbeff;
+  color: #4cbeff;
+}
+
+body .modal-content-valuepoint {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  background-color: white;
+  z-index: 2;
+  will-change: transform;
+  position: absolute;
+  top: 40px;
+  margin-left: -350px;
+  width: 325px;
+  height: auto;
+  transform: scaleX(0);
+  opacity: 0;
+  border: 1px solid #cecece;
+  transition: all 300ms cubic-bezier(0.72, 0.91, 0.35, 1.2);
+}
+body .modal-content-valuepoint .modal-header {
+  font-family: Myriad Pro;
+  min-height: 40px;
+  padding: 20px 0px 0px 15px;
+  border-bottom: 1px solid #cecece;
+}
+
+
+body .modal-content-valuepoint .modal-header .close-modal {
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  top: -10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: all 500ms;
+  user-select: none;
+}
+
+
+body .modal-content-valuepoint .modal-header .close-modal:hover {
+  transform: rotate(180deg);
+}
+body .modal-content-valuepoint .modal-body {
+  height: 200px;
+  padding: 15px;
+  overflow: auto;
+}
+
+body .modal-content-valuepoint .modal-body-annotations {
+  height: 300px;
+  padding: 15px;
+  overflow: auto;
+}
+
+body .modal-content-valuepoint .modal-footer {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  line-height: 4.5;
+  border-top: 1px solid #cecece;
+}
+
+body .modal-content-valuepoint .modal-footer button {
+  font-family: Myriad Pro;
+  margin: 10px;
+  height: 35px;
+  width: 80px;
+  color: #0081D3;
+  border: 1px solid #0081D3 !important;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+body .modal-content-valuepoint .modal-footer button:hover {
+  background-color: white;
+  border: 1px solid #4cbeff;
+  color: #4cbeff;
+}
+/* Class Utils Modal*/
+.opened {
+  transform: scaleX(1) !important;
+  opacity: 1 !important;
+}
+
+.closed {
+  transform: scaleX(0) !important;
+  opacity: 0 !important;
+}
+
+/* Scrollbar Color*/
+.modal-body::-webkit-scrollbar {
+  width: .5em;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background-color: rgba(206, 206, 206, 0.5);
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: #4cbeff;
+}
+
+.cLEWrapperDropDown.active .modal-content{
+  color: black;
+}
+
+.cLEWrapperDropDown.active ul{
+  width: 300px;
+}
+
+.cLEDateText{
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  postion: relative;
+  right: 5px;
+}
+
+.cLECustomNoteText{
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 50px;
+}
+
+.cLEAuthorText{
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 25px;
+  right: 5px;
+}
+
+.cLEStartDateInput{
+  width: 100px;
+  display: inline;
+  font-size: 1rem;
+  border: 1px solid black;
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  margin-bottom: 60px;
+  margin-left: 23px;
+  margin-top: 35px;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
+
+.cLEStartDateInput:focus{
+  outline: none;
+}
+
+.cLEStartDateAnnotationInput{
+  width: 90px;
+  display: inline;
+  font-size: 1rem;
+  border: 1px solid black;
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  margin-left: 5px;
+  margin-top: 2px;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
+
+
+.cLEEndDateAnnotationInput{
+  width: 90px;
+  display: inline;
+  font-size: 1rem;
+  border: 1px solid black;
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-top: 2px;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
+
+
+.cLEEndDateInput{
+  width: 100px;
+  display: inline;
+  font-size: 1rem;
+  border: 1px solid black;
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  margin-left: 21px;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
+
+.cLEEndDateInput:focus{
+  outline: none;
+}
+
+.cLEDropDownWrapper{
+  display: inline-block;
+}
+
+.cLETabsHeader{
+  display: flex;
+  height: 35px;
+  justify-content: space-between;
+}
+
+.cLEAnnotationModalButton{
+  display: none;
+}
+
+.cLEValuePointModalButton{
+  display: none;
+}
+
+.cLEPromptsBartModalButton{
+  display: none;
+}
+
+.cLEAnnotationModalHeader{
+  font-size: 1.2em;
+}
+
+.cLEAnnotationModalBody{
+  font-size: .9em;
+}
+
+rect.annotation-note-bg{
+  fill-opacity: 100;
+}
+
+
+
+/*date picker styles*/
+.datepicker {
+    left: 92px;
+    top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    background: white;
+    z-index: 1;
+    line-height: 1;
+    max-width: 275px;
+    height: 260px;
+    position: absolute;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+.datepicker * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.datepicker_calendar {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.datepicker_month {
+    display: inline-table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.datepicker_marker,
+.datepicker_day {
+    font-size: .8rem;
+    padding: .75em .3em;
+    text-align: center;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    transition: color 150ms, background 150ms;
+}
+
+.datepicker_marker:last-of-type,
+.datepicker_day:last-of-type {
+    border-right: 0;
+}
+
+.datepicker_header {
+    padding: .3rem .5rem;
+    text-align: center;
+    background: #4cbeff;
+    text-align: justify;
+}
+
+.datepicker_header > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.datepicker_header:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.datepicker_button {
+    display: inline-block;
+    border: none;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    transition: 150ms background;
+}
+
+.datepicker_button:before,
+.datepicker_button:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: calc(50% - 3px);
+    top: calc(50% - 3px);
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transition: 150ms border-color;
+}
+
+.datepicker_button:first-child:not(:last-child) {
+    margin-right: .25rem;
+}
+
+.datepicker_button:hover,
+.datepicker_button:active {
+    background: rgba(255, 255, 255, .85)
+}
+
+.datepicker_button:focus {
+    outline: 0 none;
+}
+
+.datepicker_button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.datepicker_button:hover:before,
+.datepicker_button:hover:after {
+    border-color: #4cbeff;
+}
+
+.datepicker_button:active:before,
+.datepicker_button:active:after {
+    border-color: #4cbeff;
+}
+
+.datepicker_button__prev-year:before {
+    transform: translateX(-30%) rotate(-135deg);
+}
+
+.datepicker_button__prev-year:after {
+    transform: translate(50%) rotate(-135deg);
+}
+
+.datepicker_button__prev-month:before {
+    transform: translate(10%) rotate(-135deg);
+}
+
+.datepicker_button__next-year:before {
+    transform: translateX(-70%) rotate(45deg);
+}
+
+.datepicker_button__next-year:after {
+    transform: translate(10%) rotate(45deg);
+}
+
+.datepicker_button__next-month:before {
+    transform: translate(-30%) rotate(45deg);
+}
+
+.datepicker_button__prev-month:after,
+.datepicker_button__next-month:after {
+    display: none;
+}
+
+.datepicker_heading {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+.datepicker_month {
+    border: 1px solid #eee;
+}
+
+.datepicker_marker {
+    color: #ccc;
+    font-weight: bold;
+    font-size: .7rem;
+    padding: .45rem .5rem;
+}
+
+.datepicker_day {
+    cursor: pointer;
+}
+
+.datepicker_day:not(.datepicker_day__selected):hover {
+    color: #4cbeff;
+}
+
+.datepicker_week:last-of-type .datepicker_day {
+    border-bottom: 0;
+}
+
+.datepicker_day__weekend,
+.datepicker_marker__weekend {
+    background: #fafafa;
+}
+
+.datepicker_day__padding {
+    background: #f8f8f8;
+    color: #aaa;
+}
+
+.datepicker_day__padding.datepicker_day__weekend {
+    background: #f4f4f4;
+}
+
+.datepicker_day__selected {
+    background: #4cbeff;
+    color: #fff;
+    border-right: 1px solid #4cbeff;
+    border-bottom: 1px solid #4cbeff;
+    font-weight: bold;
+}
+
+.datepicker_day__today {
+    font-weight: 900;
+}
+
+
+.cLEAddAnnotationsButton{
+  margin-top: -1px;
+  width: 120px;
+  font-size: .8em;
+  background-color: inherit;
+  float: left;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
+  border-color: #4cbeff;
+  border-width: .5px .5px .5px .5px;
+  border-style: solid;
+}
+
+.cLETextArea{
+  width: 206px;
+  height: 55px;
+  position: relative;
+  bottom: 32px;
+  left: 27px;
+  margin-bottom: -18px;
+  border: 1px solid black;
+}
+
+.cLECustomAnnotationAuthor{
+  position: relative;
+  bottom: 39px;
+  width: 200px;
+  left: 19px;
+}
+
+.cLECustomAuthorText{
+  font-family: Myriad Pro;
+  font-size: 1.2em;
+  position: relative;
+  bottom: 39px;
+}
+
+.cLEOptionsGraphButton{
+  width: 150px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #fff;
+  letter-spacing: .5px;
+  font-size: .8em;
+  border: none;
+  border-radius: 2px;
+  padding: 0 0 0 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.cLENullValuesButtonHolder{
+  position: relative;
+  right: 115px;
+  float: right;
+  bottom: 10px;
+}
+
+.cLENullValuesRow{
+  position: relative;
+<<<<<<< HEAD
+  top: 75px;
+=======
+  top: 60px;
+>>>>>>> sandbox/yong/ENG-1037-Prompts
+}
+
+.cLEScopeHolder{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cLEScopeHolder tspan:first-child{
+  margin-right: 15px;
+}
+
+.cLECustomScopeText{
+  position: relative;
+  width: 263px;
+  font-size: 1.2em;
+}
+
+.cLEScopeList{
+  position: relative;
+  width: 200px;
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.cLEAnnotationBackground{
+  opacity: .05;
+}
+
+.cLEHiddenValuesRow{
+  position: relative;
+  top: 30%;
+}
+
+.cLEHiddenValuesButtonHolder{
+  position: relative;
+  right: 107px;
+  float: right;
+  bottom: 10px;
+}
+
+.cLECustomAnnotationHeader{
+  position: relative;
+  bottom: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.cLEAnnotationsModalLeft{
+  width: 350px;
+}
+
+.cLETimeInput{
+  width: 90px;
+  border: 1px solid black;
+}
+
+.cLEValuePointBodyContainer{
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.cLEAnnotationModalDate{
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.cLEAnnotationModalTitle{
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.cLEAnnotationModalValueType{
+  margin-bottom: 5px;
+}
+
+.cLEAnnotationValueCorrect{
+  margin-bottom: 5px;
+}
+
+.cLEAnnotationModalValueTotal{
+  margin-bottom: 5px;
+}
+
+.cLEAnnotationModalProctors{
+  margin-bottom: 5px;
+}
+
+.cLEAnnotationModalPrompts{
+  margin-bottom: 5px;
+}
+
+.cLEValuePointDataList{
+  margin: 0;
+}
+
+.cLEValuePointPromptDT{
+  margin-bottom: 5px;
+}
+
+.cLEValuePointPromptDD{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: .9em;
+}
+
+.cLEDataTypeHeader{
+  top: 20px;
+  position: relative;
+}
+
+.cLEOptionsModalHeader{
+  font-size: 1.2em;
+}
+
+.cLEDateRangeHeader{
+  font-size: 1.2em;
+}
+<<<<<<< HEAD
+=======
+
+.cLETabLinks{
+  line-height: 20px;
+}
+>>>>>>> sandbox/yong/ENG-1037-Prompts

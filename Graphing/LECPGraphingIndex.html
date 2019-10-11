@@ -1,0 +1,156 @@
+<!-- Copyright (c) 2017 LiftEd, Incorporated. All rights reserved.
+Created by: Yong-->
+<!-- no external google links. download locally -->
+
+
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<body id="idLEContainer">
+  <div class='idLEGraphContainer' id='idLEGraphContainer'>
+    <span class="cLEGraphTopBar" id='idLETopBar'>
+      <tspan id="idLETitleHolder" class='cLETitleHolder'></tspan>
+      <tspan class="cLEAxisButtonHolder" id='idLEAxisButtonHolder'></tspan>
+      <div id='newselect' class='cLEDropDownWrapper'>
+        <div id="idLEDropDown" class="cLEWrapperDropDown" tabindex="1"><tspan class='cLEDatePickerValue' id="idLEDatePickerValue">Select Date Range</tspan>
+          <ul class="cLEDropDown">
+            <li onclick="window.LiftEd.Graphing.fSelectDateChange('Last 7 Days')">Last 7 Days</li>
+            <li onclick="window.LiftEd.Graphing.fSelectDateChange('Last 14 Days')">Last 14 Days</li>
+            <li onclick="window.LiftEd.Graphing.fSelectDateChange('Last 30 Days')">Last 30 Days</li>
+            <li onclick="window.LiftEd.Graphing.fSelectDateChange('Last 60 Days')">Last 60 Days</li>
+            <li onclick="window.LiftEd.Graphing.fSelectDateChange('Last 90 Days')">Last 90 Days</li>
+            <li onclick="window.LiftEd.Graphing.fSelectDateChange('Last 180 Days')">Last 180 Days</li>
+            <li id="idLEShowAll" onclick="window.LiftEd.Graphing.fSelectDateChange('Show All')">Show All</li>
+            <li> <button class="open-modal cLECustomDateModalButton">Custom Date Range</button></li>
+          </ul>
+
+
+
+          <div class="modal-content cLEAnnotationModal">
+            <div class='modal-header' id='header'>
+              <tspan id="idLEAnnotationModalHeader" class='cLEAnnotationModalHeader'></tspan>
+              <span class="close-modal">&times</span>
+            </div>
+            <div class="modal-body" id="idLEAnnotationModalBody">
+              <p class="cLEAnnotationModalBody" id="idLEAnnotationModalBody"></p>
+            </div>
+            <div class="modal-footer">
+              <button class="close-modal">Close</button>
+            </div>
+          </div>
+
+
+          <div class="modal-content-valuepoint cLEValuePointModal" id="idLEValuePointModal">
+            <div class="modal-body" id="idLEValuePointModalBody">
+              <div id='idLEValuePointBodyContainer' class='cLEValuePointBodyContainer'></div>
+            </div>
+            <div class="modal-footer">
+              <button class="close-modal">Close</button>
+            </div>
+          </div>
+
+          <div class="modal-content cLEOptionsModal">
+            <div class='modal-header' id='header'>
+              <tspan id="idLEOptionsModalHeader" class='cLEOptionsModalHeader'>Options</tspan>
+              <span class="close-modal">&times</span>
+            </div>
+            <div class="modal-body" id="idLEOptionsModalBody">
+              <div id='idLEDataTypeHeader' class='cLEDataTypeHeader'>Show data as:
+              <tspan class="cLEOptionsAxisButtonHolder" id='idLEAxisButtonModalHolder'></tspan>
+              </div>
+              <div class='cLENullValuesRow'>
+                <tspan>Days without data</tspan>
+              <div class="cLENullValuesButtonHolder" id='idLEDayTypeValuesButtonHolder'></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="close-modal">Close</button>
+            </div>
+          </div>
+
+          <div class="modal-content cLECustomDateModal">
+            <div class="modal-header" id='idLEModalHeader'>
+              <div class='cLEDateRangeHeader'>
+                Select a Date Range
+              </div>
+              <span class="close-modal">&times</span>
+            </div>
+            <div class="modal-body" id='idLEModalBody'>
+              <div>
+                <tspan class='cLEDateText'>Start Date:</tspan>
+                <input id='idLEStartDate' onchange="window.LiftEd.Graphing.fUpdateInput('startdate')" class='cLEStartDateInput'name="nLEStartDate" value="2017-05-31"/>
+                <br>
+                <tspan class='cLEDateText'>End Date:</tspan>
+                <input id='idLEEndDate' onchange="window.LiftEd.Graphing.fUpdateInput('enddate')" class='cLEEndDateInput'name="nLEEndDate" value="2017-05-31"/>
+              </div>
+            </div>
+            <div class="modal-footer" id='idLEModalFooter'>
+              <button class="close-modal">Close</button>
+              <button class="confirm-modal">OK</button>
+            </div>
+          </div>
+
+          <div class="modal-content-annotation cLECustomAnnotation">
+            <div class='modal-header-annotation' id='header'>
+              <tspan id="idLECustomAnnotationHeader" class='cLECustomAnnotationHeader'></tspan>
+              <span class="close-modal">&nbspx&nbsp</span>
+            </div>
+            <div class="modal-body-annotations" id="idLECustomAnnotationBody">
+                <div id='idLEAnnotationModalLeft' class="cLEAnnotationsModalLeft">
+                  <tspan class='cLEDateText'>Start Date:</tspan>
+                  <input id='idLECustomAnnotationStartDate' onchange="window.LiftEd.Graphing.fUpdateInput('startannotation')" class='cLEStartDateAnnotationInput'name="nLEAnnotationStartDate" value=""/>
+                  <input class="cLETimeInput" onchange="window.LiftEd.Graphing.fUpdateInput('starttime')" name="nLEAnnotationStartTime" type='time'/>
+                  <br>
+                  <tspan class='cLEDateText'>End Date:</tspan>
+                  <input id='idLECustomAnnotationEndDate' onchange="window.LiftEd.Graphing.fUpdateInput('endannotation')" class='cLEEndDateAnnotationInput'name="nLEAnnotationEndDate" value=""/>
+                  <input class="cLETimeInput" onchange="window.LiftEd.Graphing.fUpdateInput('endtime')" name="nLEAnnotationEndTime" type='time'/>
+                  <br>
+                  <tspan class='cLECustomAuthorText' id='idLECustomAuthorText'>Author:</tspan>
+                  <span class="cLECustomAnnotationAuthor" id='idLECustomAnnotationAuthor'></span>
+                  <br>
+                  <tspan class='cLECustomNoteText'>Notes:</tspan>
+                  <textarea class="cLETextArea" id='idLECustomAnnotationTextIput' onchange="window.LiftEd.Graphing.fUpdateInput('text')"></textarea>
+                  <br>
+                  <button class="close-modal-annotation">Close</button>
+                </div>
+                <div id='idLEScopeHolder' class="cLEScopeHolder">
+                  <div class='cLECustomScopeText' id='idLECustomScopeText'>Scope</div>
+                  <ul class='cLEScopeList' id='idLEScopeList'>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <tspan class="cLEOptionsButtonHolder" id='idLEOptionsButtonHolder'></tspan>
+    </span>
+    <div id='sIDSVGContainer' class="sLESVGContainer" background-color='green'>
+        <svg id='svgcontainer'></svg>
+        <div id='idLENoteContainer'>
+          <div id='idLEGraphLines'></div>
+        </div>
+    </div>
+  </div>
+  <div id='idLEPrompts' class='cLETabContent'>
+    <svg id='idLEPromptsSVG'></svg>
+  </div>
+  <div>
+  <br/><br/><br/><br/>
+  </div>
+  <button class="cLEAnnotationModalButton" id="idLEAnnotationButton">Hidden Annotation Button</button>
+  <button class="cLEValuePointModalButton" id="idLEValuePointButton">Hidden Value Point Button</button>
+  <button class="cLEPromptsBartModalButton" id="idLEPromptsBarButton">Hidden Prompts Bar Button</button>
+</body>
+<script type="text/javascript" src="LECPConstants.js"></script>
+<script type="text/javascript" src="LECPGraphingConstants.js"></script>
+<link rel="stylesheet" type="text/css" href="LECPGraphing.css">
+<script type="text/javascript" src='d3.min.js'></script>
+<script type="text/javascript" src='jquery-3.2.1.min.js'></script>
+<script type="text/javascript" src='d3-annotation.min.js'></script>
+<script type="text/javascript" src='html2canvas.js'></script>
+<script type="text/javascript" src="LECPAPI.js"></script>
+<script type="text/javascript" src="datepicker.js"></script>
+<script type="text/javascript" src="datepicker.js.map"></script>
+<script type="text/javascript" src="LECPUtilsCallbacks.js"></script>
+<script type="text/javascript" src="LECPGraphingCallbacks.js"></script>
+<script type="text/javascript" src="LECPUtils.js"> </script>
+<script type="text/javascript" src="LECPGraphing.js"> </script>

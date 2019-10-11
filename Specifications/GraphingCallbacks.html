@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Namespace: GraphingCallbacks</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Namespace: GraphingCallbacks</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>GraphingCallbacks</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphingCallbacks.js.html">LECPGraphingCallbacks.js</a>, <a href="LECPGraphingCallbacks.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fCallBackAddAnnotation"><span class="type-signature">(static) </span>fCallBackAddAnnotation<span class="signature">(aDictAPIargs)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Call to reload the graph with the paramaters passed in and with the addition of the new annotation.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictAPIargs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary to update graph defaults. Same dictionary information as fUpdateGraph. Format for top level dictionary: vDictAPIArgs = {
+        typeDate: 0,1,2,3,4,5,6,99 (integers)
+        dateStart: unixdate,
+        dateEnd: unixdate,
+        uuid: string
+      };
+      options paramater: {
+        typeChart: 0,1 (integers)
+        typeDisplay: 0,1,2,3 (integers)
+        numberHandler: 0,1,2 (integers)
+        tabOnLoad: 0,1,2,3 (integers)
+      };
+      annotations parameter: [
+        {
+          vDictAnnotation.note = string
+          vDictAnnotation.uuid = optional string. only used when editing existing annotation.
+          vDictAnnotation.scopeUUID =  string
+          vDictAnnotation.scopeType =  0,1,2,3
+        }
+      ]
+    }</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphingCallbacks.js.html">LECPGraphingCallbacks.js</a>, <a href="LECPGraphingCallbacks.js.html#line96">line 96</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fDidLoadGraph"><span class="type-signature">(static) </span>fDidLoadGraph<span class="signature">(aStrVersionNumber)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Call to iOS to indicate a graph is loaded. Allows user allow action after function call.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrVersionNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The version number of the graph loaded.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphingCallbacks.js.html">LECPGraphingCallbacks.js</a>, <a href="LECPGraphingCallbacks.js.html#line14">line 14</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fShowDetailsFor"><span class="type-signature">(static) </span>fShowDetailsFor<span class="signature">(aDictAPIargs)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Requests information for data value point modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictAPIargs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary to update graph defaults. Same dictionary information as fUpdateGraph. Format for top level dictionary: vDictAPIArgs = {
+         typeDate: 0,1,2,3,4,5,6,99
+         dateStart: unixdate,
+         dateEnd: unixdate,
+         uuid: string
+       },
+       options paramater: {
+         typeChart: 0,1
+         typeDisplay: 0,1,2,3
+         numberHandler: 0,1,2
+         tabOnLoad: 0,1,2,3,4
+       },
+       prompts parameter: {
+         date: unixdate @ 12:00:00,
+         uuid: string. required for regular targets/behaviors. not used for cumulative
+       }
+     };</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphingCallbacks.js.html">LECPGraphingCallbacks.js</a>, <a href="LECPGraphingCallbacks.js.html#line135">line 135</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fUpdateGraph"><span class="type-signature">(static) </span>fUpdateGraph<span class="signature">(aDictAPIargs)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Call to reload the graph with the paramaters passed in.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictAPIargs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary to update graph defaults. Same dictionary information as fUpdateGraph. Format for top level dictionary: vDictAPIArgs = {
+        typeDate: 0,1,2,3,4,5,6,99
+        dateStart: unixdate,
+        dateEnd: unixdate,
+        uuid: string
+      };
+      options paramater: {
+        typeChart: 0,1
+        typeDisplay: 0,1,2,3
+        numberHandler: 0,1,2
+        tabOnLoad: 0,1,2,3,4
+      };</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphingCallbacks.js.html">LECPGraphingCallbacks.js</a>, <a href="LECPGraphingCallbacks.js.html#line33">line 33</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fUpdateGraphDefaults"><span class="type-signature">(static) </span>fUpdateGraphDefaults<span class="signature">(aDictAPIargs)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Updates graph default settings without graph reloading
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictAPIargs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary to update graph defaults. Same dictionary information as fUpdateGraph. Format for top level dictionary: vDictAPIArgs = {
+        typeDate: 0,1,2,3,4,5,6,99
+        dateStart: unixdate,
+        dateEnd: unixdate,
+        uuid: string
+      };
+      options paramater: {
+        typeChart: 0,1
+        typeDisplay: 0,1,2,3
+        numberHandler: 0,1,2
+        tabOnLoad: 0,1,2,3,4
+      };</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphingCallbacks.js.html">LECPGraphingCallbacks.js</a>, <a href="LECPGraphingCallbacks.js.html#line65">line 65</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="API.html">API</a></li><li><a href="Const.html">Const</a></li><li><a href="Graphing.html">Graphing</a></li><li><a href="GraphingCallbacks.html">GraphingCallbacks</a></li><li><a href="Utils.html">Utils</a></li><li><a href="UtilsCallbacks.html">UtilsCallbacks</a></li><li><a href="Vars.html">Vars</a></li></ul><h3>Global</h3><ul><li><a href="global.html#punycode">punycode</a></li><li><a href="global.html#value">value</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Dec 22 2017 13:44:36 GMT-0800 (PST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

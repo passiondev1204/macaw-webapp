@@ -1,0 +1,11566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Namespace: Graphing</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Namespace: Graphing</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>Graphing</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphingConstants.js.html">LECPGraphingConstants.js</a>, <a href="LECPGraphingConstants.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddAnnotations"><span class="type-signature">(static) </span>fAddAnnotations<span class="signature">(aArrayAnnotationsData, aD3fXScale, aD3fYScale, aIntYMax)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to toggle annotations on the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotationsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of annotations dictionaries.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the x scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the y scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntYMax</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer of the y axis' max value.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line7204">line 7204</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddAxes"><span class="type-signature">(static) </span>fAddAxes<span class="signature">(aD3fXScale, aD3fYScale, aIntegerTickFrequency, aStrLabelY, aArrayXDomain)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append x and y axes onto the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the x domain</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the y domain</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntegerTickFrequency</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer to designate the tick frequency on the x axis</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrLabelY</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to label the y axis</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayXDomain</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An optional array to set the domain of the x axis with pre-designated ticks.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2308">line 2308</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddCumulativeGraphLine"><span class="type-signature">(static) </span>fAddCumulativeGraphLine<span class="signature">(aArrayCoordinates, aD3fXScale, aD3fYScale, aStringColor, aStringTypeDisplay, aStringIsManualClick)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to toggle the cumulative graph line.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayCoordinates</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of coordinates for the cumulativegraphline</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that scales the x axis</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that scales the y axis</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the cumulative graphlines color.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to determine graphe display type. Can be '0', '1', '2', or '3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringIsManualClick</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to determine if it is a manually added graphline or not. Can be 'true' or 'false'</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line4305">line 4305</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddGraphLine"><span class="type-signature">(static) </span>fAddGraphLine<span class="signature">(aArrayDataArray, aDataSetName, aD3fXScale, aD3fYScale, aStringTypeDisplay, aStringColor, aStringActiveColor, aStringMaxLineColor)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    aArrayDataArray
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayDataArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of dictionaries with data for each coordinate.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDataSetName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string with the dataset's name to use for an id.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the x scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the y scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that indicates type display.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the color of the graphline.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringActiveColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the color of the button's active state.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringMaxLineColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the max line color.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line4791">line 4791</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddGraphLineButtons"><span class="type-signature">(static) </span>fAddGraphLineButtons<span class="signature">(aArrayModifiedData, aD3fXScale, aD3fYScale, aStringTypeDisplay, aArraySummaryColumns, aArrayAnnotations)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add graph line buttons to the data table below the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayModifiedData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of modified data to use for coordinates and lines.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the x scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the y scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to designate what type of graph it is. Can be '0'. '1', '2', '3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArraySummaryColumns</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of columns for the data header.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of annotations.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line5400">line 5400</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddHiddenDaysButton"><span class="type-signature">(static) </span>fAddHiddenDaysButton<span class="signature">(aTypeDisplay, aArrayData, aD3fXScale, aD3fYScale, aArraySummaryColumns, aArrayAnnotations)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Adds hidden days button to the options modal
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates the type of display. Can be '0', '1', '2', or '3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of data of coordinates.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the X scale for d3 graphing.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the Y scale for d3 graphing.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArraySummaryColumns</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array for the column headers in the data tab.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with annotations for that date range.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8736">line 8736</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddHiddenDaysPrompts"><span class="type-signature">(static) </span>fAddHiddenDaysPrompts<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to show the details for a specific data point.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2895">line 2895</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddMergedHiddenGraphLine"><span class="type-signature">(static) </span>fAddMergedHiddenGraphLine<span class="signature">(aArrayData, aD3fXScale, aD3fYScale, aStringTypeDisplay, aArrayAnnotations, aArrayColors, aArrayActiveColors, aArrayMaxLineColors)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append the graphline for hidden days.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of dictionaries with data for each coordinate.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the x scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the y scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to determine the type display. Can be '0', '1', '2', '3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of annotations.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayColors</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of colors.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayActiveColors</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of active colors for the graphline button.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayMaxLineColors</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of max line colors.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line5074">line 5074</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddNotesToTab"><span class="type-signature">(static) </span>fAddNotesToTab<span class="signature">(aNotesArray)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add notes to the tab below the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aNotesArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of dictionaries of notes. Can be empty.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1629">line 1629</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddNotesToTab"><span class="type-signature">(static) </span>fAddNotesToTab<span class="signature">(aAnnotationsArray)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add annotations to the tab below the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aAnnotationsArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of dictionaries of notes. Can be empty.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1772">line 1772</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddNullButtons"><span class="type-signature">(static) </span>fAddNullButtons<span class="signature">(aTypeDisplay, aArrayNoMissingDatesData, aArrayOriginalData, aD3fXScale, aD3fYScale, aArraySummaryColumns, aArrayAnnotations)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Sets up regular and hidden days button in the options modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates the type of display. Can be '0', '1', '2', or '3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayNoMissingDatesData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with data points for all days within the range.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayOriginalData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with the original data (no values for days without data).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the X scale for d3 graphing.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the Y scale for d3 graphing.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArraySummaryColumns</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array for the column headers in the data tab</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with annotations for that date range.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1042">line 1042</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddPromptsAxes"><span class="type-signature">(static) </span>fAddPromptsAxes<span class="signature">(aD3fXScale, aD3fYScale, aIntegerTickFrequency, aStrLabelY, aArrayXDomain)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append x and y axes onto the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the x domain</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the y domain</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntegerTickFrequency</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer to designate the tick frequency on the x axis</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrLabelY</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to label the y axis</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayXDomain</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An optional array to set the domain of the x axis with pre-designated ticks.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2469">line 2469</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddPromptsbars"><span class="type-signature">(static) </span>fAddPromptsbars<span class="signature">(aArrayPromptsData, aDictPromptsKeys, aD3fXScale, aD3fYScale, aD3fZScale)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append the prompts graph's bars to the graph svg.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayPromptsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with the modified prompts data for d3.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictPromptsKeys</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An object with the keys for the d3 graph bar the contains the legend keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the x domain</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the y domain</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fZScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to to link the prompts with their respective colors.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2707">line 2707</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddPromptsLegend"><span class="type-signature">(static) </span>fAddPromptsLegend<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to show the details for a specific data point.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2824">line 2824</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddScopeToModal"><span class="type-signature">(static) </span>fAddScopeToModal<span class="signature">(aArrayTargetNames, aArrayDataUUID)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add scopetypes if they are designate to show by visiblity options.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayTargetNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of target names for scopetype 3</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayDataUUID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of UUIds for each data set.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line6765">line 6765</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddTactics"><span class="type-signature">(static) </span>fAddTactics<span class="signature">(aTacticsArray)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add tactics to the tab below the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aTacticsArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of dictionaries of tactics. Can be empty.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1699">line 1699</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddTacticsAndNoteLines"><span class="type-signature">(static) </span>fAddTacticsAndNoteLines<span class="signature">(aArrayTacticsData, aArrayNotesData, aD3fXScale, aD3fYScale, aIntYMax, aStringType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add tactics and notes to the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayTacticsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of tactics data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayNotesData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of notes data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the x scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the y scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntYMax</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer of the y axis' max value.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to determine whether to add tactics, notes, or both.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line6667">line 6667</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddTacticsAndNotesAnnotations"><span class="type-signature">(static) </span>fAddTacticsAndNotesAnnotations<span class="signature">(aArrayTacticsData, aArrayNotesData, aD3fXScale, aD3fYScale, aIntYMax, aStringType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add or remove notes and tactics annotations.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayTacticsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of tactics data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayNotesData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of notes data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the x axis of the graph data.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the y axis of the graph data.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntYMax</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer that has the max y value.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to to show what type of annotations to turn on or off. Can be 'tactics', or 'notes'.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line3411">line 3411</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddTacticsAndNotesButtons"><span class="type-signature">(static) </span>fAddTacticsAndNotesButtons<span class="signature">(aArrayTacticsData, aArrayNotesData, aArrayAnnotationsData, aD3fXScale, aD3fYScale, aIntYMax)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Adds tactics and notes buttons to the table underneath the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayTacticsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of tactics data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayNotesData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of notes data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotationsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of annotations data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the x scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to set the y scale</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntYMax</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer of the y axis' max value.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line6176">line 6176</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAddYAxisButtons"><span class="type-signature">(static) </span>fAddYAxisButtons<span class="signature">(aStringTypeDisplay)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to add the switch y axis buttons on to the graph or the options modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to designate the type display. Can be '0', '1', '2', or '3'.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2984">line 2984</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAppendAnnotationBackground"><span class="type-signature">(static) </span>fAppendAnnotationBackground<span class="signature">(aSVGELAnnotationsLayer, aIntY2, aD3fXScale, aIntBackgroundEndDate, aIntBackgroundStartDate, aIntAnnotationCounter, aIntWidth)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append the annotation's background on the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aSVGELAnnotationsLayer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A HTML Element representing the svg annotation layer.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntY2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation background's max height</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function to scale the the background to the graph's xscale.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntBackgroundEndDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An annotation for the background's end date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntBackgroundStartDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the background's start date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntAnnotationCounter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotaiton's current counter. Relates to the annotation number below the graph.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the width of the background.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line7126">line 7126</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAppendPathAndDots"><span class="type-signature">(static) </span>fAppendPathAndDots<span class="signature">(aArrayLineData, aArrayDotData, aStrLineClass, aStrDotClass, aStrID, aStrLineColor, aStrDotColor, aD3fXScale, aD3fYScale, aStrScaleType, aStringTypeDisplay)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append graphlines and dots to the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayLineData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of data to append the line to the graph</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayDotData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of data to append the dots to the graph</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrLineClass</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the line's class</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrDotClass</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the dots' class</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the line and dot's id.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrLineColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the line's color</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrDotColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the dot's color</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that scales the x axis for the lines and dots</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that scales the y axis for the lines and dots</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrScaleType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates what type of path and dot to append. Can be 'max' or ''.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to to show what type of annotations to turn on or off. Can be 'tactics', or 'notes'.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line3979">line 3979</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAppendValueAnnotations"><span class="type-signature">(static) </span>fAppendValueAnnotations<span class="signature">(aArrayMaxAnnotations, aArrayCorrectAnnotations, aStrMaxId, aStrValueId, aStrValueClass, aD3fXScale, aD3fYScale, aStrAnnotationType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append value annotations to the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayMaxAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of value annotations for the max value annotations.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayCorrectAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of value annotations for the # correct value annotations.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrMaxId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the max value annotations id.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrValueId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the correct value annotations id.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrValueClass</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to set the value annotation's class</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that scales the x axis for the value annotations</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that scales the y axis for the value annotations</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrAnnotationType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates what type of value annotation to append.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line4139">line 4139</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fAttachGraphTitle"><span class="type-signature">(static) </span>fAttachGraphTitle<span class="signature">(aStrResponseTitle)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to append the graph title to the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrResponseTitle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string with</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1533">line 1533</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fBuildAnnotationDictionary"><span class="type-signature">(static) </span>fBuildAnnotationDictionary<span class="signature">(aStrLabel, aIntDateStart, aIntOriginalStart, aIntDateEnd, aIntOriginalEnd, aDateEarliest, aDateLatest, aIntUUID, aStrScopeUUID, aStrAuthor, aIntScopeType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build and return an annotation dictionary used during the annotation badge's click function.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrLabel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string containing the annotation's note.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntDateStart</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation's modified start date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntOriginalStart</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation's original start date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntDateEnd</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation's modified end date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntOriginalEnd</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation's original start date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDateEarliest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation's earliest date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDateLatest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation's latest date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntUUID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the annotaiton's uuid.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrScopeUUID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string representing the annotaiton's scope uuid.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrAuthor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string representing the annotation's author.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntScopeType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer for the annotation's scopetype.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line6950">line 6950</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fBuildAnnotationsDisplay"><span class="type-signature">(static) </span>fBuildAnnotationsDisplay<span class="signature">(aArrayAnnotations)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build the annotations table under the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of annotations to display on the annotations table</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8430">line 8430</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fBuildDataDisplay"><span class="type-signature">(static) </span>fBuildDataDisplay<span class="signature">(aDataSetLength, aStrDataLabel)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build the data table under the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDataSetLength</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer of the length of the targets available.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrDataLabel</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to use as the title the for the text of the data button</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8242">line 8242</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fBuildNotesDisplay"><span class="type-signature">(static) </span>fBuildNotesDisplay<span class="signature">(aIntNotesLength)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build the notes table under the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntNotesLength</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer of the length of the notes available.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8383">line 8383</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fBuildPromptsDisplay"><span class="type-signature">(static) </span>fBuildPromptsDisplay<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build the notes table under the graph
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8515">line 8515</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fBuildTacticsDisplay"><span class="type-signature">(static) </span>fBuildTacticsDisplay<span class="signature">(aIntTacticsLength)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build the data table under the graph
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntTacticsLength</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer of the length of the targets available.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8328">line 8328</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fChooseTab"><span class="type-signature">(static) </span>fChooseTab<span class="signature">(aIntTabName)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function that displays the table corresponding to the tab selected.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntTabName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer that determines which tab was selected. Can be 0, 1, 2, 3 or 4.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line7940">line 7940</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fCreateAnnotationBadges"><span class="type-signature">(static) </span>fCreateAnnotationBadges<span class="signature">(aStrNote, aDate, aIntYMax, aStrBadgeType, aIntCounter, aStrAuthor, aDictNote)</span><span class="type-signature"> &rarr; {object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to create and return a single instance of a tactic, note, or custom annotation badge.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrNote</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to use as the note in the annotation badge.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">date</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A date to align an annotation badge to a date on the graph.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntYMax</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer to set the y heigh of the annotation badge.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrBadgeType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The type the annotation badge will be. Can be 'tactic', 'note', or 'annotation'.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntCounter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer indicating the number which tactic/note/annotation it relates to in the table below the graph.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrAuthor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string indicating the author of the annotation badge.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictNote</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An object with the note object for annotations badges.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line3333">line 3333</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    vDictBadge - Returns an annotation badge to display on the graph.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fCreateCheckboxes"><span class="type-signature">(static) </span>fCreateCheckboxes<span class="signature">(aHTMLELCheckboxContainer, aStrCheckboxType, aStrCheckboxbHolderID, aStrCheckboxID, aStrCheckboxClass, aBooleanCheckboxChecked, aStrCheckboxLabelFor, aStrCheckboxLabelClass, aStrCheckboxLabelInnerHTML, aStrCheckboxName)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates checkboxes and appends them to the panels below the graph or onto the options/custom annotations modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aHTMLELCheckboxContainer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A HTML Element to append the checkbox to.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the checkbox type.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxbHolderID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the checkbox holder's id.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the checkbox id.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxClass</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the checkbox class.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aBooleanCheckboxChecked</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A boolean indicating if the checkbox is checked or not.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxLabelFor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the checkbox label's for attribute.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxLabelClass</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the checkbox label's class.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxLabelInnerHTML</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string to display on the HTML DOM.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrCheckboxName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string for the checkbox's name.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line6052">line 6052</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fCreateDropDown"><span class="type-signature">(static) </span>fCreateDropDown<span class="signature">(vHTMLElement)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates dropdown element.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>vHTMLElement</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">HTML Element to turn into a dropdown.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line36">line 36</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fCreateDropDown"><span class="type-signature">(static) </span>fCreateDropDown<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates dropdown active toggle.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line113">line 113</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fCreateValueAnnotationsAndDotCoordinatesArray"><span class="type-signature">(static) </span>fCreateValueAnnotationsAndDotCoordinatesArray<span class="signature">(aArrayDataPoints, aStringTypeDisplay, aStringColor, aStringAnnotationType)</span><span class="type-signature"> &rarr; {object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build the x/y coordinates for the graphlines' dots and data point annotations
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayDataPoints</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of data points to build the dots and value annotations from.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates which graph type it is. Can be '0', '1', '2', '3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A hex string that designates the color of the dot and value annotations.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringAnnotationType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates whether it is a max data point or not. Can be 'max' or ''.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line3141">line 3141</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    - A dictionary of coordinates for graph dots and dot annotations.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fFillInMissingDates"><span class="type-signature">(static) </span>fFillInMissingDates<span class="signature">(aArrayData)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to fillin missing dates for the graph when displaying days without data as 0
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of data with data for dates with values.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8653">line 8653</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    - An array with all dates in the date range. Dates without value have a value of 0.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fGetDates"><span class="type-signature">(static) </span>fGetDates<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to update the graph with a new date range.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1468">line 1468</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fGetDetailsFor"><span class="type-signature">(static) </span>fGetDetailsFor<span class="signature">(aIntValueDate, aStrTargetUUID)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to show the details for a specific data point.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aIntValueDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An integer of the value's date.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrTargetUUID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A uuid of the target/behavior the value point belongs to.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2741">line 2741</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fHTMLElAnnotationModal"><span class="type-signature">(static) </span>fHTMLElAnnotationModal<span class="signature">(aHTMLElButton, aDictConfig)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates HTML Modal for tactics/notes modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aHTMLElButton</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A HTML element button to initialize the modal with.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary with a the key 'content' and value with the classname of the modal to open.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line276">line 276</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fHTMLElCustomAnnotationModal"><span class="type-signature">(static) </span>fHTMLElCustomAnnotationModal<span class="signature">(aHTMLElButton, aDictConfig)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates HTML Modal for custom annotation modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aHTMLElButton</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A HTML element button to initialize the modal with.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary with a the key 'content' and value with the classname of the modal to open.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line509">line 509</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fHTMLElModal"><span class="type-signature">(static) </span>fHTMLElModal<span class="signature">(aHTMLElBtn, aDictConfig)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates HTML Modal for custom date range
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aHTMLElBtn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A HTML element button to initialize the modal with.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary with a the key 'content' and value with the classname of the modal to open.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line149">line 149</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fHTMLElOptionsModal"><span class="type-signature">(static) </span>fHTMLElOptionsModal<span class="signature">(aHTMLElBtn, aDictConfig)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates HTML Modal for options modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aHTMLElBtn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A HTML element button to initialize the modal with.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary with a the key 'content' and value with the classname of the modal to open.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line851">line 851</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fHTMLElValuePointModal"><span class="type-signature">(static) </span>fHTMLElValuePointModal<span class="signature">(aHTMLElButton, aDictConfig)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates HTML Modal for tactics/notes modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aHTMLElButton</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A HTML element button to initialize the modal with.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary with a the key 'content' and value with the classname of the modal to open.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line413">line 413</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fLoadGraphWithArguments"><span class="type-signature">(static) </span>fLoadGraphWithArguments<span class="signature">(aDictGraphArgs)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function surrounding the main graph building function with a try catch.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictGraphArgs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary with the complete set of data to build the graph.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8935">line 8935</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fLoadGraphWithArgumentsThrowsException"><span class="type-signature">(static) </span>fLoadGraphWithArgumentsThrowsException<span class="signature">(aDictGraphArgs)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to build the graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictGraphArgs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary with the complete set of data to build the graph.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8954">line 8954</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fModifyAnnotationsDates"><span class="type-signature">(static) </span>fModifyAnnotationsDates<span class="signature">(aDictAnnotation, aArrayScaledDates)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to modify annotation dates to make them align with the ticks.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictAnnotation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary of 1 annotation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayScaledDates</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of dates scaled to the graphline's ticks.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line4717">line 4717</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fModifyPromptsData"><span class="type-signature">(static) </span>fModifyPromptsData<span class="signature">(aArrayGraphData, aDictPrompts)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to modify the prompts data to d3's format for the bar graph.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayGraphData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with the graph data. Contains a dictionary of prompts.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictPrompts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary of uuids with prompts labelsas values.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2553">line 2553</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fOpenTab"><span class="type-signature">(static) </span>fOpenTab<span class="signature">(aEvent, aStrTabName)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Error handling for requesting global constants.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aEvent</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">JS Event</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aStrTabName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">String with the name of the tab to open, possiblities: "tactics", "data", "notes", "annotations"</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line56">line 56</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSaveAnnotation"><span class="type-signature">(static) </span>fSaveAnnotation<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to save a new or edited annotation.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line6488">line 6488</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSelectDateChange"><span class="type-signature">(static) </span>fSelectDateChange<span class="signature">(aSelectValue)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Function that fires when a date range is selected from the dropdown.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aSelectValue</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates which dropdown option is selected. Can be 'Last 7 Days', 'Last 14 Days', 'Last 30 Days', 'Last 60 Days', 'Last 90 Days', 'Last 180 Days', 'Show All', or "Custom Date Range"</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1236">line 1236</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSelectDateFromDropDowns"><span class="type-signature">(static) </span>fSelectDateFromDropDowns<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function that choose the correct option from the dropdown on load.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line7994">line 7994</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSelectRadioButton"><span class="type-signature">(static) </span>fSelectRadioButton<span class="signature">(aStringRadioButtonName)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function that sets the global scopetype variable when editing or creating an annotation.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringRadioButtonName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that determine's which radio button is selected.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line6453">line 6453</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSetGraphScales"><span class="type-signature">(static) </span>fSetGraphScales<span class="signature">(aDictGraphData, aArrayPromptsData)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to set the graph's x and y scales.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictGraphData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary of graph data.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayPromptsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary of graph prompts data.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2123">line 2123</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSetHiddenGraphScales"><span class="type-signature">(static) </span>fSetHiddenGraphScales<span class="signature">(aArrayPromptsData)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to set the graph's x and y scales.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayPromptsData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of graph prompts data.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2058">line 2058</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSetScaledLines"><span class="type-signature">(static) </span>fSetScaledLines<span class="signature">(aD3fXScale, aD3fYScale)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to scale the graphlines with the correct x and y scaling.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the X scale for d3 graphing.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the Y scale for d3 graphing.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8881">line 8881</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSetShowAllDates"><span class="type-signature">(static) </span>fSetShowAllDates<span class="signature">(aDictGraphArgs)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function that sets the show all selection the dropdown with the correct date range.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aDictGraphArgs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A dictionary of the graph data</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8191">line 8191</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSetUpOptions"><span class="type-signature">(static) </span>fSetUpOptions<span class="signature">(aTypeDisplay, aArrayNoMissingDatesData, aArrayOriginalData, aD3fXScale, aD3fYScale, aArraySummaryColumns, aArrayAnnotations)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Sets up option modal with appropriate radio buttons.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aTypeDisplay</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates the type of display. Can be '0', '1', '2', or '3'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayNoMissingDatesData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with data points for all days within the range.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayOriginalData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with the original data (no values for days without data).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fXScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the X scale for d3 graphing.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aD3fYScale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A function that sets up the Y scale for d3 graphing.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArraySummaryColumns</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array for the column headers in the data tab</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayAnnotations</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array with annotations for that date range.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line976">line 976</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fSizeTables"><span class="type-signature">(static) </span>fSizeTables<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to resize the tables below the graph to fit the width of the screen
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8115">line 8115</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fTacticsAndNotesErrorHandling"><span class="type-signature">(static) </span>fTacticsAndNotesErrorHandling<span class="signature">(aArrayOfTacticsOrNotes)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to handle error handling for tactics and notes.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayOfTacticsOrNotes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of tactics or notes to error handle.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8574">line 8574</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    - An array of tactics or notes that will run error free.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fUpdateInput"><span class="type-signature">(static) </span>fUpdateInput<span class="signature">(aStringDateType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to update the global variables for startdate, enddate, starttime, endtime, startannotation, endannotation, and annotationtext
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringDateType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A string that designates the global variable to update. Can be 'startdate', 'enddate', 'starttime', 'endtime', 'startannotation', 'endannotation', and 'annotationtext'.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line1342">line 1342</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fUpdateModalHTML"><span class="type-signature">(static) </span>fUpdateModalHTML<span class="signature">(aStringHTML)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to show the details for a specific data point in the value point modal.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aStringHTML</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A large HTML string to append onto the value point body container using a configuration method.
+ Format:'
+ <div class="cLEAnnotationModalDate">12-13-2017</div> Date
+ <div class="cLEAnnotationModalTitle">Geometry Computer Program</div> Title
+ <div class="cLEAnnotationModalValueType">Activity</div> Activity/Behavior
+ <div class="cLEAnnotationValueCorrect">Correct: 3</div> Number of correct responses.
+ <div class="cLEAnnotationModalValueTotal">Total: 10</div> Number of total questions. (Optional)
+ <div class="cLEAnnotationModalProctors">Jane Doe, Jane Doe</div> Proctors
+ <div class="cLEAnnotationModalPrompts">Physical, Gestural</div> Prompts
+ <dl class="cLEValuePointDataList"> Descriptive List
+ <dt class="cLEValuePointPromptDT">Prompts</dt> Descriptive List Name
+ <dd class="cLEValuePointPromptDD"> X - 14:30 - Geometry Computer Program - Prompts: Gesutral, Physical</dd> Descriptive List Item Individual Prompts used that day.
+ <dd class="cLEValuePointPromptDD"> X - 14:30 - Geometry Computer Program - Prompts: Gesutral, Physical</dd> Descriptive List Item Individual Prompts used that day.
+ <dd class="cLEValuePointPromptDD"> X - 14:30 - Geometry Computer Program - Prompts: Gesutral, Physical</dd> Descriptive List Item Individual Prompts used that day.
+ <dd class="cLEValuePointPromptDD"> X - 14:30 - Geometry Computer Program - Prompts: Gesutral, Physical</dd> Descriptive List Item Individual Prompts used that day.
+ <dd class="cLEValuePointPromptDD"> X - 14:30 - Geometry Computer Program - Prompts: Gesutral, Physical</dd> Descriptive List Item Individual Prompts used that day.
+ <dd class="cLEValuePointPromptDD"> X - 14:30 - Geometry Computer Program - Prompts: Gesutral, Physical</dd> Descriptive List Item Individual Prompts used that day.
+ </dl>'
+ Must not have spaces OR line breaks between HTML Elements. Please take out descriptions of each HTML tag (on the right) before sending string.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line2929">line 2929</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fUtilUpdateGraphDefault"><span class="type-signature">(static) </span>fUtilUpdateGraphDefault<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function to update the graph with a new date range.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line7870">line 7870</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".fZeroData"><span class="type-signature">(static) </span>fZeroData<span class="signature">(aArrayData)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    A function zero the data passed in so that the ticks align with the graph coordinates.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>aArrayData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">An array of data to modify.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="LECPGraphing.js.html">LECPGraphing.js</a>, <a href="LECPGraphing.js.html#line8152">line 8152</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    - An array of data zeroed to midnight.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">array</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="API.html">API</a></li><li><a href="Const.html">Const</a></li><li><a href="Graphing.html">Graphing</a></li><li><a href="Utils.html">Utils</a></li><li><a href="Vars.html">Vars</a></li></ul><h3>Global</h3><ul><li><a href="global.html#punycode">punycode</a></li><li><a href="global.html#value">value</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Jan 09 2018 15:21:19 GMT-0800 (PST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
